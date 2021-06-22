@@ -54,3 +54,31 @@
 // // Почта poly@hotmail.de удалена из рассылки.
 
 // console.log(service); // ['mango@mail.com', 'ajax@jmail.net', 'kiwi@mail.uk']
+
+
+// 5-й модуль автопроверка
+function Storage(items) {
+  this.items = items;
+ 
+}
+
+Storage.prototype.getItems = function () {
+  return this.items;
+}
+
+Storage.prototype.addItems = function (newItem) {
+ return this.item += newItem;
+}
+
+Storage.prototype.removeItem = function (Items){
+  return this.item -= removeItem;
+}
+
+
+// Пиши код выше этой строки
+const storage = new Storage(['Нанитоиды', 'Пролонгер', 'Антигравитатор']);
+console.log(storage.getItems()); // ["Нанитоиды", "Пролонгер", "Антигравитатор"]
+storage.addItem('Дроид');
+console.log(storage.getItems()); // ["Нанитоиды", "Пролонгер", "Антигравитатор", "Дроид"]
+storage.removeItem('Пролонгер');
+console.log(storage.getItems()); // ["Нанитоиды", "Антигравитатор", "Дроид"]
